@@ -1,4 +1,6 @@
-@extends('layouts.mainadmin') <!-- Asumsikan Anda punya layout admin -->
+@extends('layouts.mainadmin')
+@section('title', 'Riwayat admin')
+
 
 @section('contents')
     <div class="container text-center pt-5 my-5">

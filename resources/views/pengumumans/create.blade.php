@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title', 'Create pengumuman admin')
 
 <div class="d-flex justify-content-center align-items-center vh-15">
     <img src="{{asset('pengumuman.png')}}" class="img-fluid" style="width:200px">

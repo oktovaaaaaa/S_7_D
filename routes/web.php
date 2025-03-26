@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminKontakController;
 use App\Http\Controllers\AdminTestimoniController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Pesanan;
@@ -60,6 +61,12 @@ Route::middleware(['auth', 'user.role'])->group(function () {
     Route::post('/menu/proses-pembayaran', [UserController::class, 'prosesPembayaran'])->name('userr.prosesPembayaran'); // Route untuk card menu
     Route::get('/riwayat-pesanan', [UserController::class, 'lihatRiwayatPesanan'])->name('userr.riwayatPesanan');
     Route::delete('/riwayat-pesanan/{id}/hapus', [UserController::class, 'hapusRiwayatPesanan'])->name('userr.hapusRiwayatPesanan');
+
+
+
+    Route::post('/proses-pembayaran', [UserController::class, 'prosesPembayaran'])->name('userr.prosesPembayaran');
+Route::post('/proses-pembayaran-keranjang', [UserController::class, 'prosesPembayaranKeranjang'])->name('userr.prosesPembayaranKeranjang');
+Route::post('/midtrans/callback', [UserController::class, 'midtransCallback']);
 });
 
 

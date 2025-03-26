@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @include('layouts.navbar')
+@section('title', 'Kontak')
 
 <section id="contact" class="contact section bg-light pt-5 my-5">
     <div class="container section-title" data-aos="fade-up">

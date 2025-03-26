@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->text('daftar_menu'); // Menyimpan daftar menu yang dipesan (JSON)
             $table->integer('total_harga'); // Total harga pesanan
-            $table->string('status'); // Status pesanan (misalnya: 'pending', 'dibayar', 'selesai')
+            $table->string('status')->default('pending'); // Status pesanan (misalnya: 'pending', 'dibayar', 'selesai')
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
@@ -31,4 +31,3 @@ return new class extends Migration
         Schema::dropIfExists('pesanans');
     }
 };
-?>

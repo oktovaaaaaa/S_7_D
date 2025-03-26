@@ -1,4 +1,6 @@
 @extends('layouts.mainadmin')
+@section('title', 'Kontak admin')
+
 @section('contents')
     <div class="d-flex justify-content-center align-items-center vh-15">
         <img src="{{ asset('tentang.png') }}" class="img-fluid" style="width:200px">

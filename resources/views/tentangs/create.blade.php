@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title', 'Create tentang admin')
 
 <div class="d-flex justify-content-center align-items-center vh-15">
     <img src="{{asset('tentang.png')}}" class="img-fluid" style="width:200px">

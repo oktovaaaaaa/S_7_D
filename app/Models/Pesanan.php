@@ -20,6 +20,7 @@ class Pesanan extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class, 'user_id'); // Tambahkan 'user_id'
+        return $this->belongsTo(User::class, 'user_id'); // user id utk foreign key
+
     }
 }

@@ -1,5 +1,7 @@
 @extends('layouts.main')
 @include('layouts.navbar')
+@section('title', 'Home')
+
 <body class="index-page">
   <main class="main">
 

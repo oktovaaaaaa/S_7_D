@@ -1,4 +1,6 @@
 @extends('layouts.mainadmin')
+@section('title', 'Tentang admin ')
+
 
 @section('contents')
     <div class="d-flex justify-content-center align-items-center vh-15">

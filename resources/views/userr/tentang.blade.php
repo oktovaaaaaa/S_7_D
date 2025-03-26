@@ -1,5 +1,7 @@
 @include('layouts.navbar')
 @extends('layouts.main')
+@section('title', 'Tentang DelCafe')
+
 
 <style>
     /* Gradient untuk judul */

@@ -1,5 +1,7 @@
 @include('layouts.navbar')
 @extends('layouts.main')
+@section('title', 'Galeri')
+
 <style>
 body {
     font-family: 'Poppins', sans-serif;
